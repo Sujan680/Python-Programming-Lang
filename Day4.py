@@ -74,3 +74,5 @@ mylist = thislist.copy()
 print(mylist)
 
 print(mylist.count("apple"))
+
+print(mylist.pop())
