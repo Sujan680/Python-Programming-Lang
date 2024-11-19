@@ -9,8 +9,10 @@ print(myList)
 numbers = [1,2,3,4,5]  # List with integers
 print(numbers)
 
-mix_list = [1, 'Hello', 3.12, True]  # List with mixed data types
+mix_list = [1, 'Hello', 3.12, True, False, "World",100]  # List with mixed data types
 print(mix_list)
+
+
 
 
 # Accessing  elements in list: we use indexing to access elements
@@ -18,6 +20,10 @@ print(mix_list)
 print(mix_list[2])
 print(numbers[-1])  # [-1] indicates the last element in list
 print(mix_list[0])  # [0] indicates the first element in the list
+
+print(mix_list[3:])  #slicing
+print(mix_list[:7])
+
 
 # Modifying a List
 
@@ -41,3 +47,30 @@ print(list)
 print(type(list))
 
 print("The length of the list is:",len(list))
+
+
+thislist = ["apple", "banana", "cherry"]
+print("apple" in thislist)
+
+thislist[1:3] = ["Orange", "Mango"]
+print(thislist)
+
+
+
+# Extend list
+
+thislist = ["apple", "banana", "cherry"]
+anotherlist = ["mango", "papaya"]
+
+thislist.extend(anotherlist)
+print(thislist)
+
+
+# Copy a list
+
+thislist = ["apple", "banana", "cherry"]
+
+mylist = thislist.copy()
+print(mylist)
+
+print(mylist.count("apple"))
