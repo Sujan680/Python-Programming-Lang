@@ -1,3 +1,5 @@
+# This is the comment , # hash is used, To make code readable
+
 # Variables are containers for storing data values. 
 # Python has no command for declaring a variable.
 # A variable is created the moment you first assign a value to it.
@@ -103,4 +105,18 @@ def myfunc():
 
 myfunc()
 
-print("Python is " + x)
+print("Python is " + x);
+
+my_name = "The name of Python developer is Guido Van Russom";
+
+print(f"{my_name} which is developed in 1991");
+
+print("""Hi, this is the multi line
+      printing in python""");
+
+
+print("Hi, this is Sujan \n I am from Pokhara");
+
+
+a = "Hello World!!";
+print(a);
