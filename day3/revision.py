@@ -201,3 +201,49 @@ print(my_dict.pop("year"))
 
 del my_dict["model"]
 print(my_dict)
+
+
+
+############### Sets in Python
+
+nums = { 1,2,3,4,5}
+print(nums)
+print(type(nums))
+print(len(nums))
+
+nums1 = { 1, 0 , 6 , 10}
+
+print(nums.union( nums1))
+
+
+### methods ---
+
+set = {"apple", "banana", "cherry"}
+set.add("orange")
+print(set)
+
+thisset = {"apple", "banana", "cherry"}
+mylist = ["kiwi", "orange"]
+
+mylist.extend(thisset)
+thisset.update(mylist)
+print(thisset)
+print(mylist)
+
+## remove items
+
+thisset1 = {"apple", "banana", "cherry"}
+
+thisset1.remove("banana")
+
+print(thisset1)
+
+# Joins in sets 
+set1 = {"a", "b", "c", 1}
+set2 = {1, 2, 3, "b"}
+
+set3 = set1.union(set2)
+print(set3)
+
+set3 = set1.intersection(set2)
+print(set3)
