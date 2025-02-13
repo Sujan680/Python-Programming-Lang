@@ -93,4 +93,52 @@ while i <= 5:
     i += 1;
     
     
+########### For loop in python
+# it is used for the sequnetial traversal;   
+
+list = [1,"a", 2,"ball",True, 3, 4, 5]
+
+for i in list:
+    print(i)
+
+
+str = "Hello Sujan"
+for string in str:
+    print(string)
+else:
+    print("End")
     
+# to find the value x in tuple
+
+tup1 = (1,4,9,16,25,36,49,64,81,100)
+x = int(input("Enter fav number"))
+
+for i in range(len(tup1)):
+    if(x == tup1[i]):
+        print("Found")
+        break
+        i += 1;
+        
+        
+### range(5)
+# range(1,4) here starting from 1 to 4
+# range(1,10,2) here starting from 1 and to 10 and by increasing 2
+for i in range(2, 20, 2):
+    print(i)
+    
+
+for i in range(10, 0, -1):
+    print(i)
+
+## multiplication of n
+n = int(input("Enter numbr"))   
+for i in range(1, 11):
+    print(n * i)
+    
+    
+n = int(input("Enter numbr")) 
+fact = 1
+for i in range(1,n+1):
+    fact *= i
+    
+print("Factoral", fact)
