@@ -146,3 +146,58 @@ fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")
 print(green)
 print(yellow)
 print(red)
+
+
+########## Dictionary in Python
+# It is used to store the values in key:value pairs
+
+
+info = {
+    "name" : "sujan",
+    "age" : 12,
+    "address" : "Pokhara"
+}
+
+print(info["address"])
+
+
+# to add new value 
+info["city"] = "Chauthe"
+
+print(info);
+
+thisdict = {
+  "brand": "Ford",
+  "electric": False,
+  "year": 1964,
+  "colors": ["red", "white", "blue"]
+}
+
+print(thisdict["colors"])
+
+
+# Dict methods 
+
+my_dict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+print(my_dict.keys())
+print(my_dict.items())
+print(my_dict.values())
+
+# updating the dict 
+my_dict.update({"year" : "2025"})
+print(my_dict)
+
+my_dict["color"] = "white"
+print(my_dict)
+
+
+#### removing the items
+print(my_dict.pop("year"))
+
+del my_dict["model"]
+print(my_dict)
