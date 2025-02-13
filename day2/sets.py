@@ -17,7 +17,7 @@ empty_set = set();
 print(type(empty_set))
 print(len(empty_set)) # 0
 
-###### Set Methods --- add(), remove(), clear(), pop()
+###### Set Methods --- add(), remove(), updatee(), clear(), pop()
 
 empty_set.add("Apple")
 empty_set.add("Car")
@@ -27,6 +27,12 @@ print(empty_set) # {"Apple", "Car"}
 
 empty_set.remove("Car");
 print(empty_set)
+
+# update() methods
+thisset1 = {"apple", "banana", "cherry"}
+tropical = {"pineapple", "mango", "papaya"}
+thisset1.update(tropical)
+print(thisset1)
 
 
 arrr = {1,2,3,4,5}
