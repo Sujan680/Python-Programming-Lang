@@ -83,3 +83,66 @@ print(list)
 
 list.pop(2)  # remove 2 indexed value that is 10 [5,7,10]
 print(list)
+
+
+######### Tuples in Python ###########
+# A built in data type that lets us create immutable sequences of values
+
+# A tuple is a collection which is ordered and unchangeable.
+# In tuple items can not be changed once it is created
+tup =  ("sujan", 100, True, 1j)
+
+print(tup[0])
+print(tup[1])
+print(tup[2])
+print(tup[3])
+
+print(len(tup)) # 4
+
+#tup[0] = "Hi"; ## not allowed in tuple
+print(tup)
+
+# Tuple methods 
+
+tup = (1,4,7,10, 1,2,4,1,0,True,4)
+
+print(tup.count(1))
+print(tup.index(4))
+
+# creating tuple with one item
+thistuple = ("apple",)
+print(type(thistuple))
+
+#NOT a tuple
+thistuple = ("apple")
+print(type(thistuple))
+
+# can store multiple data types
+tuple1 = ("abc", 34, True, 40, "male")
+print(type(tuple1))
+
+
+#### tuple(), list() constructor
+
+# myTuple = tuple(("apple", "banana", "cherry"))
+
+# myList = list((12, 45, 23, 8, True));
+
+####### Unpacking a tuple
+
+fruits = ("apple", "banana", "cherry")
+
+(green, yellow, red) = fruits
+
+print(green)
+print(yellow)
+print(red)
+
+########## Using a asterik (*red)
+fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")
+
+(green, yellow, *red) = fruits
+
+print(green)
+print(yellow)
+print(red)
