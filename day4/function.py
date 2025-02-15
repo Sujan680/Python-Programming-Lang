@@ -56,3 +56,18 @@ def print_list(list):
       
         nums = [1,2,3,4,5]  
 print_list(nums)
+
+
+fruits = ["apple", "ball", 'sujan']
+
+def fruit_list(list):
+    for x in list:
+        print(x)
+fruit_list(fruits)
+
+
+# factorial of n
+
+def fact_num(n):
+    return n * (n-1)
+print(fact_num(4))
